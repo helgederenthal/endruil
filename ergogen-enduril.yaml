@@ -1,0 +1,20 @@
+points:
+  zones:
+    alphas:
+      key:
+        spread: cx
+        padding: cy
+      columns:
+        pinky:
+          key:
+            splay: 15
+        ring:
+        middle:
+        index:
+        inner:
+      rows:
+        top:
+          padding: 17
+        home:
+          padding: 17
+        bottom:
