@@ -1,4 +1,9 @@
+units:
+  $default_width: cx
+  $default_height: cy
 points:
+  key:
+    autobind: 0
   zones:
     alphas:
       key:
@@ -8,24 +13,59 @@ points:
         pinky:
           key:
             splay: 15
+          rows:
+            bottom:
+              bind: [1, 0, 0, 0]
+            home:
+              bind: [1, 10, 0, 0]
+            top:
+              bind: [0, 7, 0, 0]
         ring:
           key:
             splay: -10
             stagger: 17
             spread: cx + 2
+          rows:
+            bottom:
+              bind: [0, 22, 0, 0]
+            home:
+              bind: [1, 4, 0, 0]
+            top:
+              bind: [0, 5, 0, 0]
         middle:
           key:
             splay: -5
             stagger: 6
             spread: cx + 1.5
+          rows:
+            bottom:
+              bind: [0, 0, 0, 0]
+            home:
+              bind: [0, 0, 0, 0]
+            top:
+              bind: [0, 0, 0, 0]
         index:
           key:
             splay: -5
             stagger: -6
             spread: cx + 1
+          rows:
+            bottom:
+              bind: [0, 0, 0, 2]
+            home:
+              bind: [0, 0, 0, 4]
+            top:
+              bind: [0, 0, 0, 5]
         inner:
           key:
             stagger: -1
+          rows:
+            bottom:
+              bind: [0, 20, 8, 1]
+            home:
+              bind: [0, 28, 0, 1]
+            top:
+              bind: [1, 0, 1, 1]
       rows:
         bottom:
         home:
@@ -41,11 +81,27 @@ points:
           key:
             splay: -5
             rotate: 10
+            bind: [7, 1, 0, 0]
         middle:
           key:
             splay: -10
             shift: [2.1, 0.3]
+            bind: [5, 1, 0, 7]
         inner:
           key:
             splay: -20
             shift: [4.7, -1.8]
+            bind: [3.7, 0, 0, 7]
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      bound: true
+      asym: left
+      size: [cx, cy]
+      corner: 1
+  first:
+    - what: outline
+      name: raw
+      fillet: 3
+
