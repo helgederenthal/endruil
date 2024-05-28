@@ -9,12 +9,43 @@ points:
           key:
             splay: 15
         ring:
+          key:
+            splay: -10
+            stagger: 17
+            spread: cx + 2
         middle:
+          key:
+            splay: -5
+            stagger: 6
+            spread: cx + 1.5
         index:
+          key:
+            splay: -5
+            stagger: -6
+            spread: cx + 1
         inner:
+          key:
+            stagger: -1
       rows:
-        top:
-          padding: 17
+        bottom:
         home:
           padding: 17
-        bottom:
+        top:
+          padding: 17
+    thumb:
+      anchor:
+        ref: alphas_inner_bottom
+        shift: [-9, -22]
+      columns:
+        outer:
+          key:
+            splay: -5
+            rotate: 10
+        middle:
+          key:
+            splay: -10
+            shift: [2.1, 0.3]
+        inner:
+          key:
+            splay: -20
+            shift: [4.7, -1.8]
