@@ -6,6 +6,8 @@ points:
     autobind: 0
   zones:
     alphas:
+      anchor:
+        shift: [150, -150]
       key:
         spread: cx
         padding: cy
@@ -98,10 +100,24 @@ outlines:
       where: true
       bound: true
       asym: left
-      size: [cx, cy]
+      size: [cx+3, cy+2]
       corner: 1
   first:
     - what: outline
       name: raw
       fillet: 3
-
+pcbs:
+  endruil:
+    outlines:
+      main:
+        outline: first
+    footprints:
+      keys:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
