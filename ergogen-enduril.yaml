@@ -100,7 +100,7 @@ outlines:
       where: true
       bound: true
       asym: left
-      size: [cx+3, cy+2]
+      size: [cx+2, cy+1]
       corner: 1
   first:
     - what: outline
