@@ -121,3 +121,26 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+      controller:
+        what: promicro
+        params:
+          orientation: "up"
+        where:
+          ref: alphas_inner_home
+          shift: [20,-10]
+          rotate: -90
+      trrs:
+        what: trrs
+        params:
+          reverse: true
+          symmetric: true
+          A: ""
+          B: ""
+          C: ""
+          D: ""
+        where:
+          ref: alphas_inner_home
+          shift: [35.7,5]
+          rotate: 0
+
+
