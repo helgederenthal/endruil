@@ -1,2 +1,2 @@
 #/bin/sh
-ergogen ergogen-enduril.yaml -o ergogen-output
+ergogen config-wired.yaml

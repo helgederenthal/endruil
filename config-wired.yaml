@@ -108,6 +108,7 @@ outlines:
       fillet: 3
 pcbs:
   endruil:
+    template: kicad8
     outlines:
       main:
         outline: first
