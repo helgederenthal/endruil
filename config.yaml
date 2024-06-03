@@ -84,16 +84,19 @@ points:
             splay: -5
             rotate: 10
             bind: [7, 1, 0, 0]
+            column_net: B3
         middle:
           key:
             splay: -10
             shift: [2.1, 0.3]
             bind: [5, 1, 0, 7]
+            column_net: B2
         inner:
           key:
             splay: -20
             shift: [4.7, -1.8]
             bind: [3.7, 0, 0, 7]
+            column_net: B6
 outlines:
   raw:
     - what: rectangle
@@ -122,16 +125,17 @@ pcbs:
           keycap_height: 16.5
           choc_v2_support: false
           reversible: true
+          solder: true
           from: "{{column_net}}"
-          to: "{{colrow}}"
+          to: "GND"
       controller:
         what: custom/elite-c
         params:
           reversable: true
-          reversable_pins: 15
+          reversable_pins: 5
         where:
           ref: alphas_inner_home
-          shift: [20,-10]
+          shift: [20,-10.5]
           rotate: 0
       trrs:
         what: trrs
