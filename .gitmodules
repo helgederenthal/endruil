@@ -1,0 +1,3 @@
+[submodule "footprints/custom"]
+	path = footprints/custom
+	url = https://github.com/helgederenthal/ergogen-footprints.git

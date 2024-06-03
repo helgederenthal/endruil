@@ -114,22 +114,25 @@ pcbs:
         outline: first
     footprints:
       keys:
-        what: choc
+        what: custom/switch_choc_v1_v2
         where: true
         params:
-          keycaps: true
-          reverse: true
-          hotswap: true
+          include_keycap: true
+          keycap_width: 17.5
+          keycap_height: 16.5
+          choc_v2_support: false
+          reversible: true
           from: "{{column_net}}"
           to: "{{colrow}}"
       controller:
-        what: promicro
+        what: custom/elite-c
         params:
-          orientation: "up"
+          reversable: true
+          reversable_pins: 15
         where:
           ref: alphas_inner_home
           shift: [20,-10]
-          rotate: -90
+          rotate: 0
       trrs:
         what: trrs
         params:
